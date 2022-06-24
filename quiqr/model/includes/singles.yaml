@@ -1,0 +1,75 @@
+---
+- key: image-manager
+  _mergePartial: global-images
+
+- key: video-manager
+  _mergePartial: global-videos
+
+- key: allfiles-manager
+  _mergePartial: global-allfiles
+
+- key: links
+  title: Links
+  file: data/links.yaml
+  fields:
+    - key: items
+      title: Link Items
+      type: accordion
+      fields:
+        - key: linkurl
+          title: URL
+          type: string
+        - key: linkimage
+          title: image
+          type: string
+        - key: linktitle
+          title: Title
+          type: string
+          arrayTitle: true
+        - key: disable
+          title: disable
+          type: boolean
+
+- key: mainConfig
+  title: Main Config
+  file: config.yaml
+  fields:
+    - key: title
+      title: Site Title
+      type: string
+      tip: Your page title.
+    - key: baseURL
+      title: Base URL
+      type: string
+      tip: Your site URL.
+    - key: theme
+      title: Theme
+      type: readonly
+      tip: The current theme.
+    - key: languageCode
+      title: Language Code
+      type: readonly
+
+    - key: params
+      group: Params
+      type: section
+      fields:
+        - key: aboutText
+          title: About
+          type: easymde
+        - key: subTitle
+          title: sunTitle
+          type: string
+        - key: domain
+          title: Domain
+          type: string
+        - key: description
+          title: Description
+          type: string
+        - key: description2
+          title: Description 2
+          type: string
+        - key: siteImage
+          title: Site Image
+          type: string
+

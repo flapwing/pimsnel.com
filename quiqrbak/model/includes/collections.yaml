@@ -1,0 +1,6 @@
+- key: pages
+  title: Other Pages
+  folder: content/page/
+  extension: md
+  itemtitle: Page
+  _mergePartial: page

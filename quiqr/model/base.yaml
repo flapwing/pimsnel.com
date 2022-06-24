@@ -1,0 +1,7 @@
+hugover: 0.88.1
+serve:
+  - key: default
+    config: config.yaml
+build:
+  - key: default
+    config: config.yaml

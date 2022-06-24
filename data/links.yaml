@@ -1,0 +1,29 @@
+items:
+  - disable: false
+    linkimage: opensource.png
+    linktitle: Open Source<br/> Projects
+    linkurl: 'https://mipmip.github.io'
+  - disable: false
+    linkimage: bread.png
+    linktitle: "Pim's Blog,<br/>mostly \U0001F1F3\U0001F1F1"
+    linkurl: 'https://pimsnel.nl'
+  - disable: false
+    linkimage: PDF-Letterhead-Logo.png
+    linktitle: PDF Letterhead App
+    linkurl: 'https://pdfletterhead.net'
+  - disable: false
+    linkimage: optionsearch.png
+    linktitle: Nix Home Manager<br/>Option Search
+    linkurl: 'https://mipmip.github.io/home-manager-option-search/'
+  - disable: false
+    linkimage: path10.png
+    linktitle: AwesomeWM Screenshot Gallery
+    linkurl: 'https://mipmip.github.io/awesomewm-screenshots/'
+  - disable: true
+    linkimage: ''
+    linktitle: Nix User Repositories (NUR Package Search)
+    linkurl: 'https://nur.nix-community.org/'
+  - linkurl: 'https://svg-stencils.github.io/'
+    linkimage: svg-stencils.png
+    linktitle: SVG Stencils
+    disable: false

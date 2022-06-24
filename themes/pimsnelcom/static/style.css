@@ -1,0 +1,274 @@
+.work-page h3 {
+  margin: 0;
+}
+.work-page section {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 20px;
+}
+.work-page p {
+  margin: 2em 0;
+}
+.work-page blockquote {
+  font-size: 0.8rem;
+  margin-left: 0;
+  margin-top: 0.3em;
+}
+.work-page iframe {
+  display: block;
+  margin: auto;
+  height: 500px;
+  width: 100%;
+}
+.work-page figure {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+.work-page figure img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+.work-page figure figcaption {
+  padding: 1em;
+  font-size: 0.7rem;
+  max-width: 500px;
+  margin: auto;
+}
+@media (max-width: 1000px) {
+  .work-page iframe {
+    width: 100%;
+  }
+}
+html {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 100;
+  color: #222;
+  background: #fff;
+}
+body {
+  margin: 0;
+}
+h1 {
+  font-size: 1.5rem;
+  padding: 0;
+  color: #555;
+  margin: 0;
+  font-weight: 400;
+}
+h2 {
+  font-weight: 100;
+  font-size: 5rem;
+  margin: 0;
+  line-height: 1em;
+}
+p {
+  margin: 0.5em;
+}
+a {
+  color: #0bc1db;
+  text-decoration: none;
+}
+a:hover {
+  color:#c31e14;
+}
+header {
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+navitem a {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.8rem;
+  margin: 0 0.4em;
+}
+#hero {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#work {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding-bottom: 100px;
+}
+#about, #achievements {
+  padding: 0 30px;
+  max-width: 500px;
+  margin: 100px 0;
+}
+#about p, #achievements p {
+  margin: 1em 0;
+}
+#about h3, #achievements h3 {
+  margin-bottom: 0.5em;
+}
+.wf-loading, .wf-inactive {
+  opacity: 0;
+}
+.wf-active {
+  opacity: 1;
+}
+.bold {
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.content-width {
+  max-width: 1000px;
+  margin: auto;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  max-width: 400px;
+}
+.work-item {
+  position: relative;
+  font-weight: 800;
+  text-decoration: none;
+  display: block;
+  width: 300px;
+  height: 300px;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  text-align: center;
+}
+.work-item img {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.work-item span {
+  transition: opacity 0.2s ease-in;
+  opacity: 0;
+  z-index: 2;
+}
+.work-item span::before {
+  display: block;
+  top: 0;
+  left: 0;
+  content: '';
+  background: rgba(255, 255, 255, 0.75);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.work-item:hover span {
+  opacity: 1;
+}
+.columns {
+  display: flex;
+  justify-content: center;
+}
+#about-page .about-page-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+#about-page .headshot {
+  border: 3px solid #222;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+#about-page-text {
+  padding: 0 30px;
+  max-width: 500px;
+}
+#about-page-text p {
+  margin: 1em 0;
+}
+#about-page-text h3 {
+  margin-bottom: 0.5em;
+}
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 4rem;
+  }
+  header {
+    display: block;
+    text-align: center;
+  }
+  #hero p {
+    font-size: 0.9rem;
+  }
+  .content-width {
+    max-width: 650px;
+  }
+  .columns {
+    display: block;
+  }
+  #hero, .work-page > header {
+    align-items: center;
+  }
+  #work {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #about, #achievements {
+    margin: 0 auto 100px;
+  }
+  #about-page .about-page-content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 650px) {
+  h2 {
+    font-size: 2rem;
+  }
+  #hero {
+    height: 60vh;
+  }
+  #hero p {
+    font-size: 0.7rem;
+  }
+  #work {
+    display: block;
+  }
+  .work-item {
+    margin: 50px auto;
+  }
+  .hero-content {
+    max-width: 200px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  html, body {
+    color: #fff;
+    background: #222;
+  }
+  a {
+    color: #0bc1db;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #6fc2ee;
+  }
+  .work-item {
+    color: #fff;
+  }
+  .work-item span::before {
+    background: rgba(0, 0, 0, 0.75);
+  }
+}
+
+
+/*# sourceMappingURL=style.css.map*/

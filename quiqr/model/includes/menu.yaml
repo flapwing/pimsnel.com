@@ -1,0 +1,14 @@
+- key: links
+  title: "Links"
+  menuItems:
+    - key: links
+
+- key: assets
+  title: "Assets"
+  menuItems:
+    - key: image-manager
+
+- key: Settings
+  title: "Settings"
+  menuItems:
+    - key: mainConfig
